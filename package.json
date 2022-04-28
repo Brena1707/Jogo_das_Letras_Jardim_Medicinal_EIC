@@ -1,7 +1,6 @@
 {
   "name": "mvp",
   "version": "0.1.0",
-  "homepage": "https://eic.ifsc.usp.br/app/jogo-das-letras-JardimMedicinal",
   "private": true,
   "dependencies": {
     "react": "^17.0.1",
