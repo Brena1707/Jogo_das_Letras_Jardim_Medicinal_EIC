@@ -42,7 +42,7 @@ export default class Fases extends Component{
             um = "#6DD0BC"
             dois = "#6DD0BC"
             tres = "#6DD0BC"
-            quatro ="#FCCF44"
+            quatro ="#6DD0BC"
             cinco = "#FCCF44";
         }
         var fase;

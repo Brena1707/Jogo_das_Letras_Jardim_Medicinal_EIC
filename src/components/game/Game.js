@@ -26,7 +26,8 @@ const ConditionalLink = ({ children, level,time }) => {
         contador++;
         console.log(contador);
         if(contador===5){
-            contador === 0;
+            contador = 0;
+            level = 1;
             return <Link to={{pathname:'final', init:time}}>{children}</Link> 
         }
     else
@@ -97,13 +98,15 @@ export default class Game extends Component{
                    
                 }))
                 Swal.fire({
-                        title: "PARABÉNS",
-                        text: "A resposta está correta",
+                        title: "<span style='color:#000'>PARABÉNS</span>",
+                        html: "<span style='color:#000'>A resposta está correta!</span>",
                         imageUrl: feliz,
                         showCloseButton: true,
                         showCancelButton: false,
-                        showConfirmButton: false,
+                        showConfirmButton: true,
+                        confirmButtonColor: '#6DD0BC',
                         padding:'3em',
+                        background:" #fff url('https://media3.giphy.com/media/QBehwGHH9M6fXxPaPh/giphy.gif')",
                         timer: 2000,
                         width: cel ? 300 : 600
                     })
