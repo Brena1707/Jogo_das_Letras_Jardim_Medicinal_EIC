@@ -179,7 +179,7 @@ export default class Game extends Component{
             display: "flex", alignItems: "center", flexWrap: "wrap-reverse", width: "12em", justifyContent: "center"
         }
         return (
-            <div style={{display:"flex", flexWrap:"wrap-reverse", justifyContent:"center", alignItems:"strech", height: this.props.mobile?"80%":"40%"}}>
+            <div style={{display:"flex", flexWrap:"wrap-reverse", justifyContent:"center", alignItems:"strech", height: this.props.mobile?"90%":"40%"}}>
                 <span  onKeyDown={(e) => this.handleKeyDown(e,cel)} tabIndex="-1" style={{outline: "none", width:"100vw", height:"100vh", position:"absolute"}}></span>
                 <TemplateEscuro mobile={this.props.mobile} id={this.state.word[1]} font='roboto' size={"1em"} bolinhas={true} level={this.state.level} fase={this.state.fase} />
                  <div style={{display:"flex", position:this.props.mobile?"absolute":"static",left:this.props.mobile?cel?"10vw":"30%":"0", alignSelf: "center", justifyContent: "center"}}>

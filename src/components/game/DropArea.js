@@ -12,8 +12,8 @@ export default function DropArea({row, column, mobile}) {
     }
   })
   if(mobile)
-    return (<span ref={drop} className="droparea mobile" style={{ paddingRight:"10px", paddingBottom:"2px",gridColumn:column, gridRow:row}}></span>)
+    return (<span ref={drop} className="droparea mobile" style={{ paddingRight:"6px", paddingBottom:"2px",gridColumn:column, gridRow:row}}></span>)
   else
-    return (<span ref={drop} className="droparea desktop" style={{ padding:"10px",gridColumn:column, gridRow:row}}></span>)
+    return (<span ref={drop} className="droparea desktop" style={{ padding:"6px",gridColumn:column, gridRow:row}}></span>)
   
 }
