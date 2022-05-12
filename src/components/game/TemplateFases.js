@@ -2,12 +2,14 @@ import React, { Component } from 'react'
 import Stopwatch from './Cornometro'; 
 export default class Fases extends Component{
     shouldComponentUpdate(nextProps) {
-        return this.props === nextProps;
+        console.log(nextProps);
+        return this.props.level === nextProps.level;
     }
     render() {
         var um, dois, tres, quatro, cinco
-
+        
         if (this.props.level === 1) {
+            console.log(this.props.level);
             um = "#FCCF44";
             dois = "#fff"
             tres = "#fff"
@@ -15,6 +17,7 @@ export default class Fases extends Component{
             cinco = "#fff"
         }
         else if (this.props.level === 2) {
+            console.log(this.props.level);
             um = "#6DD0BC"
             dois = "#FCCF44";
             tres = "#fff"
@@ -39,7 +42,7 @@ export default class Fases extends Component{
             um = "#6DD0BC"
             dois = "#6DD0BC"
             tres = "#6DD0BC"
-            quatro ="#6DD0BC"
+            quatro ="#FCCF44"
             cinco = "#FCCF44";
         }
         var fase;

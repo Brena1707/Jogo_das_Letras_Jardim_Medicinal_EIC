@@ -25,9 +25,10 @@ const ConditionalLink = ({ children, level,time }) => {
     if((level  === 5))
         contador++;
         console.log(contador);
-        if(contador===5)
+        if(contador===5){
+            contador === 0;
             return <Link to={{pathname:'final', init:time}}>{children}</Link> 
-    
+        }
     else
         return <div>{children}</div>
         
