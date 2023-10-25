@@ -6,4 +6,4 @@ da USP de São Carlos.
 
 # Para Jogar
 
-*No link que esta na descrição do projeto é possível ter acesso ao jogo.
+*No link que esta na descrição do projeto é possível ter acesso ao jogo.*
